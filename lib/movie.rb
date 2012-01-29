@@ -8,7 +8,7 @@ class Movie
     begin
       "http://#{$CONFIG['host']}:#{$CONFIG['port']}#{@movie.thumb}"
     rescue => e
-      puts e
+      #puts e
     end
   end
 

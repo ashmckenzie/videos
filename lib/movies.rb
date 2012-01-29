@@ -41,7 +41,7 @@ class Movies
 
   def generate_body_html
     movies = []
-    all.each do |movie|
+    all[0..10].each do |movie|
       movies << generate_movie_html(Movie.new(movie))
     end
     movies.join("\n")    

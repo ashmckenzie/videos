@@ -1,12 +1,9 @@
-<p>
-    <img src="<%= movie.thumb_url %>" />
-</p>
-<br/>
-<p class="title">
-  <%= movie.title %>
-</p>
-<br/>
-<p class="summary">
-  <%= movie.summary %>
-</p>
-<br/><br/>
+<div class="movie">
+  <div class="thumb">
+     <img src="<%= movie.thumb_url %>" /> 
+  </div>
+  <div class="detail">
+    <h2><%= movie.title %></h2>
+    <p class="summary"><%= movie.summary %></p>
+  </div>
+</div>

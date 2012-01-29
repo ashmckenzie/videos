@@ -8,26 +8,46 @@ body {
   width: 600px;
 }
 
-img,
-p {
-  width: 600px;
+.movie {
+  clear: both;
+  float: left;
+  padding-bottom: 30px;
+  width: 800px;
 }
 
-img {
+.movie div {
+  float: left;
+}
+
+.movie .thumb {
+  width: 400px;
+}
+
+.movie .thumb img {
   background-color: #eee;
   border: 1px solid #ddd;
   padding: 6px;
+  width: 300px;
 }
 
-p {
-  margin: 0 auto;
+.movie .detail {
+  width: 350px;
 }
 
+h2 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h2,
 p.title {
   font-family: Georgia;
-  font-size: 2em; 
+  font-size: 1.5em; 
 }
 
 p.summary {
+  color: #BBB;
+  font-family: Georgia;
   text-align: justify;
+  line-height: 1.5em;
 }

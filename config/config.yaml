@@ -1,0 +1,5 @@
+---
+host: 10.1.1.8
+port: 32400
+tv_shows: 'TV shows'
+movies: 'Movies'

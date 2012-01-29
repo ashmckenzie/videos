@@ -1,0 +1,58 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    addressable (2.2.6)
+    awesome_print (1.0.2)
+    coderay (0.9.8)
+    css_parser (1.2.6)
+      addressable
+      rdoc
+    facets (2.9.3)
+    ffi (1.0.11)
+    inline-style (0.5.0)
+      css_parser
+      facets
+      maca-fork-csspool
+      nokogiri
+    json (1.6.5)
+    little-plugger (1.1.3)
+    logging (1.6.2)
+      little-plugger (>= 1.1.3)
+    maca-fork-csspool (2.0.2)
+      ffi
+    method_source (0.6.7)
+      ruby_parser (>= 2.3.1)
+    mime-types (1.17.2)
+    nokogiri (1.5.0)
+    plex-ruby (1.5.0)
+      nokogiri
+    pry (0.9.7.4)
+      coderay (~> 0.9.8)
+      method_source (~> 0.6.7)
+      ruby_parser (>= 2.3.1)
+      slop (~> 2.1.0)
+    pry-nav (0.0.4)
+      pry (~> 0.9.7.4)
+    rdoc (3.12)
+      json (~> 1.4)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    ruby_parser (2.3.1)
+      sexp_processor (~> 3.0)
+    sexp_processor (3.0.10)
+    slop (2.1.0)
+    trollop (1.16.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+  inline-style
+  logging
+  nokogiri
+  plex-ruby
+  pry
+  pry-nav
+  rest-client
+  trollop

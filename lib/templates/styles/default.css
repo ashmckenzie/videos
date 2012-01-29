@@ -1,0 +1,33 @@
+body {
+  background-color: #000;
+  color: #ddd;
+  font-family: Helvetica, Arial;
+  font-size: 0.9em;
+  margin: 0 auto;
+  text-align: center;
+  width: 600px;
+}
+
+img,
+p {
+  width: 600px;
+}
+
+img {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  padding: 6px;
+}
+
+p {
+  margin: 0 auto;
+}
+
+p.title {
+  font-family: Georgia;
+  font-size: 2em; 
+}
+
+p.summary {
+  text-align: justify;
+}

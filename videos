@@ -1,0 +1,40 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+Bundler.require(:default, :development)
+
+require_relative 'lib/config'
+require_relative 'lib/utils'
+require_relative 'lib/videos'
+require_relative 'lib/tv_shows'
+require_relative 'lib/movies'
+require_relative 'lib/movie'
+
+include Utils
+
+opts = Trollop::options do
+  opt :verbose, "Verbose mode"
+  opt :debug, "Verbose mode"
+end
+
+$VERBOSE_ON = opts[:verbose] ? true : false
+$DEBUG_ON = opts[:debug] ? true : false
+
+$logger = Logging.logger(STDOUT)
+$logger.level = :off
+$logger.level = :info if $VERBOSE_ON
+$logger.level = :debug if $DEBUG_ON
+
+debug_log(opts)
+debug_log($CONFIG)
+
+v = Videos.new($CONFIG['host'], $CONFIG['port'])
+m = v.movies
+
+# m.search([
+#   [ 'summary', /Bond/ ],
+#   [ 'title', /Austin/, true ]
+# ])
+
+puts m.create_html

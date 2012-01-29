@@ -47,7 +47,9 @@ p.title {
 
 p.summary {
   color: #BBB;
+  height: 310px;
   font-family: Georgia;
-  text-align: justify;
   line-height: 1.5em;
+  overflow: hidden;
+  text-align: justify;
 }
